@@ -31,12 +31,13 @@ public class Student
 	public void setClass_name(String C_name) {
 		Class_name = C_name;
 	}
+
 	public void setPro_name(String P_name) {
 		Pro_name = P_name;
 	}
 	
 	
-	public char getStdId() {
+	public char getStuId() {
 		return StuID;
 	}
 	public int getStuGrade() {
