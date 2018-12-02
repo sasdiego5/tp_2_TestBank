@@ -2,20 +2,17 @@
 
 public class Student
 {
-	private char StuID;
+	private int StuID;
 	private String StuName;
 	private int StuGrade;
 	private String Class_name;
 	private String Pro_name;
 	
 
-    Student(char StdId, String SName, int StdGrade,String C_name, String P_name)
+    Student(int StdId, String SName)
 	{
-    	this.StuGrade = StdGrade;
     	this.StuID = StdId;
     	this.StuName = SName;
-    	this.Class_name = C_name;
-    	this.Pro_name =P_name;
     	
 	}
 	
@@ -36,7 +33,7 @@ public class Student
 		Pro_name = P_name;
 	}
 	
-	public char getStuId() {
+	public int getStuId() {
 		return StuID;
 	}
 	public int getStuGrade() {
