@@ -22,8 +22,8 @@ public class Student
 	public void setStuID(char StdId) {
 		StuID = StdId;
 	}
-	public void setStuGrade(char StdGrade) {
-		StuGrade = StdGrade;
+	public void setStuGrade(int grade) {
+		StuGrade = grade;
 	}
 	public void setStuName(String SName) {
 		StuName = SName;
@@ -35,7 +35,6 @@ public class Student
 	public void setPro_name(String P_name) {
 		Pro_name = P_name;
 	}
-	
 	
 	public char getStuId() {
 		return StuID;
@@ -53,5 +52,12 @@ public class Student
 		return Pro_name;
 	}
 	
+	public String toString() 
+	{
+		String report = "ID: " + getStuId() + "\n";
+		report += "Name: " + getStuName() + "\n";
+		report += "Grade: " + getStuGrade() + "\n";
+		return report;
+	}
 
 }
