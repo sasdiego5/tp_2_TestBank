@@ -4,7 +4,7 @@ public class MainApp
 
 	public static void main(String[] args)
 	{
-		Take_Exam exam = new Take_Exam();
+		Frame_Take_Exam exam = new Frame_Take_Exam();
 		exam.setVisible(true);
 	}
 
