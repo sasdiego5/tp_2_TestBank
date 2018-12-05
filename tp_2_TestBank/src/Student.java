@@ -5,13 +5,19 @@ public class Student
 	private int StuGrade;
 	private String Class_ID;
 
-	Student(char StdId, String SName, int StdGrade, String C_name, String P_name)
+	public Student(char StdId, String SName, int StdGrade, String C_name, String P_name)
 	{
 		this.StuGrade = StdGrade;
 		this.StuID = StdId;
 		this.StuName = SName;
 		this.Class_ID = C_name;
 
+	}
+
+	public Student(char stuID, String stuName)
+	{
+		this.StuID = stuID;
+		this.StuName = stuName;
 	}
 
 	public char getStuID()
@@ -47,6 +53,11 @@ public class Student
 	public String getClass_ID()
 	{
 		return Class_ID;
+	}
+	
+	public void setClass_ID(String classID) 
+	{
+		this.Class_ID = classID;
 	}
 
 	public String toString()

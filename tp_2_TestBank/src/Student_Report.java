@@ -29,7 +29,7 @@ public class Student_Report
 	{
 
 		StdOut.println("Please enter Student ID");
-		int StuID = StdIn.readInt();
+		char StuID = StdIn.readChar();
 		
 		StdOut.println("Please enter Student Name");
 		String StuName = StdIn.readLine();

@@ -32,7 +32,7 @@ public class unitTest_Student
 
 		this.student.setStuID(studentID);
 
-		assertEquals(this.student.getStuId(), (char) 01);
+		assertEquals(this.student.getStuID(), (char) 01);
 	}
 
 	@Test
@@ -50,9 +50,9 @@ public class unitTest_Student
 	{
 		String studentClass = "TestClass";
 
-		this.student.setClass_name("TestClass");
+		this.student.setClass_ID("TestClass");
 
-		assertEquals(this.student.getClass_name(), studentClass);
+		assertEquals(this.student.getClass_ID(), studentClass);
 	}
 
 	@Test
@@ -64,15 +64,4 @@ public class unitTest_Student
 
 		assertEquals(this.student.getStuGrade(), (char) 100);
 	}
-
-	@Test
-	public void test_student_professor_name()
-	{
-		String professorName = "TestProfessor";
-
-		this.student.setPro_name(professorName);
-
-		assertEquals(this.student.getPro_name(), "TestProfessor");
-	}
-
 }

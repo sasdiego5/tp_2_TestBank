@@ -47,9 +47,9 @@ public class unitTest_Professor
 	{
 		String professorClass = "TestClass";
 
-		this.professor.setClass_name("TestClass");
+		this.professor.setClass_ID("TestClass");
 
-		assertEquals(this.professor.getClass_name(), professorClass);
+		assertEquals(this.professor.getClass_ID(), professorClass);
 	}
 
 }
