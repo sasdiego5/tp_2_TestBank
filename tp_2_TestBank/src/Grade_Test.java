@@ -7,8 +7,9 @@ public class Grade_Test
 	public int grade;
 	public Test_Generator test;
 	
-	public Grade_Test() 
+	public Grade_Test(Test_Generator test) 
 	{
+		this.test = test;
 		this.grade = 0;
 	}
 	

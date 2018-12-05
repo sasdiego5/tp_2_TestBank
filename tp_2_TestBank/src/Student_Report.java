@@ -4,7 +4,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class Student_Report
 {
 	public Professor professor;
-	public Student[] students;
+	public Student[] students = new Student[50];
 	public Student currentStudent;
 	public Grade_Test grade;
 	public Test_Generator test;
@@ -15,19 +15,18 @@ public class Student_Report
 		
 	}
 	
-	public Student_Report(int studentID) 
+	public Student Student_Report(int studentID) 
 	{
 		for (int i = 0; i < students.length; i++) 
 		{	
-			if (this.students[i].getStuId() == studentID)
+			if (this.students[i].getStuID() == studentID)
 				currentStudent = this.students[i];	
 		}
-	
+		return currentStudent;
 	}
 	
 	public void addStudent(Student currentStudent)
 	{
-		this.students = new Student[50];
 
 		StdOut.println("Please enter Student ID");
 		int StuID = StdIn.readInt();

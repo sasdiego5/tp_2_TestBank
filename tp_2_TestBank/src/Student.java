@@ -1,57 +1,57 @@
-
-
 public class Student
 {
-	private int StuID;
+	private char StuID;
 	private String StuName;
 	private int StuGrade;
-	private String Class_name;
-	private String Pro_name;
-	
+	private String Class_ID;
 
-    Student(int StdId, String SName)
+	Student(char StdId, String SName, int StdGrade, String C_name, String P_name)
 	{
-    	this.StuID = StdId;
-    	this.StuName = SName;
-    	
-	}
-	
-	public void setStuID(char StdId) {
-		StuID = StdId;
-	}
-	public void setStuGrade(int grade) {
-		StuGrade = grade;
-	}
-	public void setStuName(String SName) {
-		StuName = SName;
-	}
-	public void setClass_name(String C_name) {
-		Class_name = C_name;
+		this.StuGrade = StdGrade;
+		this.StuID = StdId;
+		this.StuName = SName;
+		this.Class_ID = C_name;
+
 	}
 
-	public void setPro_name(String P_name) {
-		Pro_name = P_name;
-	}
-	
-	public int getStuId() {
+	public char getStuID()
+	{
 		return StuID;
 	}
-	public int getStuGrade() {
-		return StuGrade;
+
+	public void setStuID(char stuID)
+	{
+		StuID = stuID;
 	}
-	public String getStuName() {
+
+	public String getStuName()
+	{
 		return StuName;
 	}
-	public String getClass_name() {
-		return Class_name;
-	}
-	public String getPro_name() {
-		return Pro_name;
-	}
-	
-	public String toString() 
+
+	public void setStuName(String stuName)
 	{
-		String report = "ID: " + getStuId() + "\n";
+		StuName = stuName;
+	}
+
+	public int getStuGrade()
+	{
+		return StuGrade;
+	}
+
+	public void setStuGrade(int stuGrade)
+	{
+		StuGrade = stuGrade;
+	}
+
+	public String getClass_ID()
+	{
+		return Class_ID;
+	}
+
+	public String toString()
+	{
+		String report = "ID: " + getStuID() + "\n";
 		report += "Name: " + getStuName() + "\n";
 		report += "Grade: " + getStuGrade() + "\n";
 		return report;

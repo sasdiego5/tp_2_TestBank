@@ -17,7 +17,7 @@ public class unitTest_Student
 	@Before
 	public void setUp() throws Exception
 	{
-		this.student = new Student(StuID, StuName, StuGrade, Class_name, Pro_name);
+		this.student = new Student(StuID, StuName);
 	}
 
 	@After
