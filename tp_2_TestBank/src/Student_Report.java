@@ -1,6 +1,9 @@
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student_Report
 {
 	public Professor professor;
@@ -28,11 +31,11 @@ public class Student_Report
 	public void addStudent(Student currentStudent)
 	{
 
-		StdOut.println("Please enter Student ID");
-		char StuID = StdIn.readChar();
+//		StdOut.println("Please enter Student ID");
+		char StuID = 01;
 		
-		StdOut.println("Please enter Student Name");
-		String StuName = StdIn.readLine();
+//		StdOut.println("Please enter Student Name");
+		String StuName = "Student A";
 		
 		currentStudent = new Student(StuID, StuName);
 				
@@ -49,9 +52,14 @@ public class Student_Report
 		
 		return report;
 	}
+
+			
 	public static void main(String[] args)
 	{
-
+		
+		Take_Exam people = new Take_Exam();
+		people.getrecord();
+		List<String> l = new ArrayList<String>(people.getrecord().keySet());
 	}
 	
 	

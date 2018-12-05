@@ -14,10 +14,11 @@ public class Student
 
 	}
 
-	public Student(char stuID, String stuName)
+	public Student(char stuID, String stuName, String classID)
 	{
 		this.StuID = stuID;
 		this.StuName = stuName;
+		this.Class_ID = classID;
 	}
 
 	public char getStuID()
