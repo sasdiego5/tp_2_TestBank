@@ -1,0 +1,26 @@
+1)  A(n) _____________________ is an object that defines an unusual or erroneous situation that is 
+typically recoverable.
+a) error
+b) exception
+c) interface
+d) try block
+e) catch block
+
+2)  A(n) _____________________ is an object that defines an erroneous situation from which the 
+program usually cannot recover.
+a) error
+b) exception
+c) interface
+d) try block
+e) catch block
+
+
+3)  A(n) ____________________ can be used to find the exact line where an exception was thrown 
+during program execution.
+a) interface
+b) call-stack trace
+c) try block
+d) catch block
+e) none of the above
+
+
