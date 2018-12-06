@@ -9,7 +9,7 @@ public class Student_Report
 	public Professor professor;
 	public Student[] students = new Student[50];
 	public Student currentStudent;
-	public Grade_Test grade;
+	public Test grade;
 	public Test_Generator test;
 	
 
@@ -36,8 +36,9 @@ public class Student_Report
 		
 //		StdOut.println("Please enter Student Name");
 		String StuName = "Student A";
+		String classID = "635";
 		
-		currentStudent = new Student(StuID, StuName);
+		currentStudent = new Student(StuID, StuName,classID);
 				
 		int stuIndex = 0;
 		this.students[stuIndex] = currentStudent;
@@ -57,9 +58,8 @@ public class Student_Report
 	public static void main(String[] args)
 	{
 		
-		Take_Exam people = new Take_Exam();
-		people.getrecord();
-		List<String> l = new ArrayList<String>(people.getrecord().keySet());
+		Login_UI people = new Login_UI();
+
 	}
 	
 	

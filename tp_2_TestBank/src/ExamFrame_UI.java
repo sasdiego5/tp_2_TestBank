@@ -4,12 +4,12 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
-public class ExamFrame extends JFrame
+public class ExamFrame_UI extends JFrame
 {
 	private double screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;
 	private double screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;
 
-	public ExamFrame(String title, int width, int height)
+	public ExamFrame_UI(String title, int width, int height)
 	{
 		super(title);
 		setSize(width, height);

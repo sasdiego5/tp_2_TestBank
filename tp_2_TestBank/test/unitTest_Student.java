@@ -11,13 +11,13 @@ public class unitTest_Student
 	private char StuID;
 	private String StuName;
 	private int StuGrade;
-	private String Class_name;
+	private String Class_ID;
 	private String Pro_name;
 
 	@Before
 	public void setUp() throws Exception
 	{
-		this.student = new Student(StuID, StuName);
+		this.student = new Student(StuID, StuName,Class_ID);
 	}
 
 	@After
