@@ -1,11 +1,8 @@
 Team Members:  
-Peter Kabata 
-Diego Orejuela
-Jun Li 
-Fadekemi Oyelola
+Peter Kabata, Diego Orejuela, Jun Li and Fadekemi Oyelola
 
 This project is creating test manually from a Question Library(TestBank).
-Vision 
+
 
 Introduction 
 
