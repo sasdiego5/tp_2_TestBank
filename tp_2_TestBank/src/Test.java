@@ -14,6 +14,11 @@ public class Test
 		this.grade = 0;
 	}
 	
+	public Test(Question questions) 
+	{
+		
+	}
+	
 	public int getGrade() 
 	{
 		return grade;
