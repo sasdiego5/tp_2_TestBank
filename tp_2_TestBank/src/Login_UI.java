@@ -15,7 +15,7 @@ public class Login_UI extends ExamFrame_UI
 	private JTextField txtUserName;
 	private JTextField txtUserID;
 	private JTextField txtClassID;
-	private Student student;
+	private Student student; //Student class
 	private ArrayList<Student> studentList;
 	
 	Map<String, String> student_record = new HashMap<String, String>();
