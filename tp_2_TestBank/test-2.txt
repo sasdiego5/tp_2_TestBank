@@ -1,0 +1,20 @@
+1)  The process of inheritance should establish a(n) ___________________ relationship.
+a) is-a
+b) has-a
+c) static
+d) not-a
+e) none of the above
+
+2)  The original class that is used to derive a new class using inheritance is called ____________________ .
+a) a superclass
+b) a parent class
+c) a base class
+d) all of the above
+e) neither a, b, nor c
+
+3)  __________ occurs when a child class defines a method with the same signature as a method in the parent class.
+a) Overloading
+b) Overriding
+c) Overwhelming
+d) Substituting
+e) A child class cannot define a method with the same signature as a parent class method.
