@@ -27,7 +27,7 @@ public class Professor {
 		return ProID;
 	}
 
-	public String getProName() {
+	public String P_Name() {
 		return ProName;
 	}
 
