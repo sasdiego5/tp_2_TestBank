@@ -49,7 +49,7 @@ public class Exam_UI extends ExamFrame_UI {
 		
 		
 		String str = "";
-		File file = new File("C:/Users/June/Desktop/Documents/test.txt");
+		File file = new File("test.txt");
 
 		try {
 			inFile1 = new Scanner(file);
