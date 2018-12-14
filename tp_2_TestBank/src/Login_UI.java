@@ -1,6 +1,9 @@
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
+import edu.princeton.cs.introcs.StdOut;
+
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -15,6 +18,7 @@ public class Login_UI extends ExamFrame_UI
 	private JTextField txtUserID;
 	private JTextField txtClassID;
 	public Student[] students = new Student[20];
+	private Student_Report stuRep;
 	Map<String, String> student_record = new HashMap<String, String>();
 
 	public Login_UI()
@@ -86,8 +90,10 @@ public class Login_UI extends ExamFrame_UI
 //		for (int i = 0; i < students.length; i++)
 //		{
 		int index = 0;
-		students[0] = new Student(txtUserID, txtUserName, txtClassID);
+		students[index] = new Student(txtUserID, txtUserName, txtClassID);
+		stuRep.addStudent(students[index]);
 		index++;
+		
 			
 //		}
 	}
@@ -96,4 +102,27 @@ public class Login_UI extends ExamFrame_UI
 	{
 		return student_record;
 	}
+	
+
+	public static void main(String[] args)
+	{
+		
+		Login_UI loginfo = new Login_UI();
+		JTextField ID = new JTextField("1");
+		JTextField IDclass = new JTextField("2");
+		JTextField name = new JTextField("3");
+		
+		loginfo.add(ID);
+		loginfo.add(IDclass);
+		loginfo.add(name);
+	
+
+		for (int i = 0; i < loginfo.students.length; i++) 
+		{
+			StdOut.println(loginfo.students[i]);
+		}
+		
+
+	}
 }
+
