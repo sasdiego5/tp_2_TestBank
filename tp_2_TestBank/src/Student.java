@@ -1,9 +1,15 @@
+import javax.swing.JTextField;
+
 public class Student
 {
 	private char StuID;
 	private String StuName;
 	private int StuGrade;
 	private String Class_ID;
+	private JTextField StuNametxt;
+	private JTextField StuIDtxt;
+	private JTextField Class_IDtxt;
+	
 
 	public Student(char StdId, String SName, int StdGrade, String C_name, String P_name)
 	{
@@ -20,6 +26,12 @@ public class Student
 		this.StuName = stuName;
 		this.Class_ID = classID;
 	}
+	
+	public Student(JTextField txtUserID, JTextField txtUserName, JTextField txtClassID)
+	{
+		this.StuIDtxt = txtUserID;
+		this.StuNametxt = txtUserName;
+		this.Class_IDtxt = txtClassID;	}
 
 	public char getStuID()
 	{
