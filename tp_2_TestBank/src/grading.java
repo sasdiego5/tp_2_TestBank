@@ -26,6 +26,8 @@ public class grading {
 	   
 	   
 	   
-	   StdOut.print(grade);
+//	   StdOut.print(grade);
+	   StdOut.print("Your Grade is: " + grade + "out of 3");
+
 	}
 }

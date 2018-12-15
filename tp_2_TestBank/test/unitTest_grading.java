@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class unitTest_Grade_Test
+public class unitTest_grading
 {
 
 	@Before
