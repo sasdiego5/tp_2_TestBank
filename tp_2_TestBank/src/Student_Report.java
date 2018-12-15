@@ -11,8 +11,6 @@ public class Student_Report
 	public Professor professor;
 	public Student[] students = new Student[50];
 	public Student currentStudent;
-	public Test grade;
-	public Test_Generator test;
 	public Login_UI loginfo;
 
 	public Student_Report()
