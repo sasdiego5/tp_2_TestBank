@@ -27,7 +27,7 @@ import javax.swing.JTextPane;
 
 public class Exam_UI extends ExamFrame_UI
 {
-	// public Question question;
+	public Question question;
 	// String string = question.getQuestion();
 	// String q = question.getQuestion();
 	private Scanner inFile1;

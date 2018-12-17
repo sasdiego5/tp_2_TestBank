@@ -8,10 +8,12 @@ import java.util.List;
 
 public class Student_Report
 {
-	public Professor professor;
-	public Student[] students = new Student[50];
-	public Student currentStudent;
-	public Login_UI loginfo;
+	private Professor professor;
+	private Student[] students = new Student[50];
+	private Student currentStudent;
+	private Login_UI loginfo;
+	private Question question;
+	
 
 	public Student_Report()
 	{
