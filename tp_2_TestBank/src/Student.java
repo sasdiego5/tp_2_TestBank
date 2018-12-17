@@ -1,8 +1,10 @@
 import javax.swing.JTextField;
 
+import edu.princeton.cs.introcs.StdOut;
+
 public class Student
 {
-	private char StuID;
+	private int StuID;
 	private String StuName;
 	private int StuGrade;
 	private String Class_ID;
@@ -20,7 +22,7 @@ public class Student
 
 	}
 
-	public Student(char stuID, String stuName, String classID)
+	public Student(int stuID, String stuName, String classID)
 	{
 		this.StuID = stuID;
 		this.StuName = stuName;
@@ -33,12 +35,12 @@ public class Student
 		this.StuNametxt = txtUserName;
 		this.Class_IDtxt = txtClassID;	}
 
-	public char getStuID()
+	public int getStuID()
 	{
 		return StuID;
 	}
 
-	public void setStuID(char stuID)
+	public void setStuID(int stuID)
 	{
 		StuID = stuID;
 	}
@@ -75,10 +77,19 @@ public class Student
 
 	public String toString()
 	{
-		String report = "ID: " + getStuID() + "\n";
-		report += "Name: " + getStuName() + "\n";
-		report += "Grade: " + getStuGrade() + "\n";
+		String report = "ID: " + this.StuID + "\n";
+		report += "Name: " + this.StuName + "\n";
+		report += "Class: " + this.Class_ID + "\n";
+		report += "Grade: " + this.StuGrade + "\n";
 		return report;
 	}
+	
+public static void main(String[] args)
+{
+	Student student1 = new Student( 01,"02","03");
+	StdOut.println(student1.toString());
+
+
+}
 
 }

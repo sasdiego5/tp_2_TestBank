@@ -18,14 +18,15 @@ public class Student_Report
 
 	}
 
-	public Student Student_Report(int studentID)
+	public String Student_Report(int studentID)
 	{
+		String report = "";
 		for (int i = 0; i < students.length; i++)
 		{
 			if (this.students[i].getStuID() == studentID)
 				currentStudent = this.students[i];
 		}
-		return currentStudent;
+		return report + currentStudent;
 	}
 
 	public void addStudent(Student currentStudent)
@@ -57,19 +58,31 @@ public class Student_Report
 	public void FileWriter() throws IOException
 	{
 		String fileContent = "Student Exam Report";
-		fileContent += this.loginfo.students;
+		fileContent += this.students.toString();
 
 		FileWriter fileWriter = new FileWriter("Student_Report.txt");
 		fileWriter.write(fileContent);
 		fileWriter.close();
 	}
+	
+	public Student getStudent() 
+	{
+		return this.currentStudent;
+	}
+	
+	public void setStudent(Student current) 
+	{
+		this.currentStudent = current;
+	}
 
 	public static void main(String[] args) throws IOException
 	{
 		Student_Report StuRep = new Student_Report();
+		Student student1 = new Student(01,"02","03");
+		StuRep.setStudent(student1);
+		StuRep.addStudent(student1);
+		StdOut.println(StuRep.getStudent().toString());
 		StuRep.FileWriter();
-		Login_UI people = new Login_UI();
-
 	}
 
 }

@@ -89,10 +89,10 @@ public class Login_UI extends ExamFrame_UI
 
 //		for (int i = 0; i < students.length; i++)
 //		{
-		int index = 0;
-		students[index] = new Student(txtUserID, txtUserName, txtClassID);
-		stuRep.addStudent(students[index]);
-		index++;
+//		int index = 0;
+//		students[index] = new Student(txtUserID, txtUserName, txtClassID);
+//		stuRep.addStudent(students[index]);
+//		index++;
 		
 			
 //		}
